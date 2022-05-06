@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <style>
+        #topbar{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    
+}
+#logo{
+    color: #0086ff;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+    letter-spacing: -2px;
+    margin-right: 100px;}
+    .menu-item{
+        margin-right: 24px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+        top: -5px;
+        left: 100px;
+    }
+    main{
+        background-color: palegreen;
+    }
+    article{
+        background-color: cornflowerblue;
+        width: 70%;
+        float: left;
+    
+    }
+    aside{
+        background-color: violet;
+        width: 30%;
+        float: right;
+    }
+    footer{
+        background-color: rebeccapurple;
+    }
+    #clear{
+        clear: both;
+    }
+    .clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+    }
+    </style>
+</head>
+<body>
+    <header id="topbar">
+        <nav>
+            <span id="logo">Teslim</span>
+            <span class="menu-item">Home</span>
+            <span class="menu-item">About</span>
+            <span class="menu-item">Contact</span>
+        </nav>
+    </header>
+    <main class="clearfix">
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure laboriosam quibusdam ea perferendis beatae hic qui, nobis necessitatibus neque fugiat dolorum.
+                Obcaecati nobis, eum tenetur quidem velit veniam nulla!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure laboriosam quibusdam ea perferendis beatae hic qui, nobis necessitatibus neque fugiat dolorum.
+                Obcaecati nobis, eum tenetur quidem velit veniam nulla!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure laboriosam quibusdam ea perferendis beatae hic qui, nobis necessitatibus neque fugiat dolorum.
+                Obcaecati nobis, eum tenetur quidem velit veniam nulla!
+               </p>
+        </article>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure laboriosam quibusdam ea perferendis beatae hic qui, nobis necessitatibus neque fugiat dolorum.
+                Obcaecati nobis, eum tenetur quidem velit veniam nulla!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iure laboriosam quibusdam ea perferendis beatae hic qui, nobis necessitatibus neque fugiat dolorum.
+                Obcaecati nobis, eum tenetur quidem velit veniam null</p>
+        </aside>
+
+
+    </main>
+    <!-- <div id="clear"></div> -->
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+</body>
+</html>
